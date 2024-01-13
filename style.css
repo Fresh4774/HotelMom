@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background: #f8fddf;
+  font-family: "Lato", sans-serif;
+  color: #2b2b2b;
+}
+
+a {
+  text-decoration: none;
+  color: #d33f2e;
+  font-size: 0.9rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  height: 100%;
+  padding: 1em;
+  display: grid;
+  grid-template-rows: 800px 1fr;
+  align-items: start;
+}
+
+section {
+  width: 100%;
+  max-width: 800px;
+  height: 100%;
+  max-height: 800px;
+  position: relative;
+}
+
+.svg-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+footer {
+  padding: 1em 0 2em;
+  text-align: center;
+  display: grid;
+  place-items: center;
+}
+footer a {
+  margin-top: 20px;
+}
+footer div {
+  border: none;
+  outline: none;
+  width: 40px;
+  height: 40px;
+  background: #ffa004;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+footer div svg {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke-width: 3;
+  stroke: #fff;
+  text-align: center;
+}
+
+@media (max-width: 580px) {
+  .container {
+    grid-template-rows: 1fr 30%;
+  }
+}
